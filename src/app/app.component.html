@@ -1,0 +1,14 @@
+<div>
+    <ul class="nav">
+        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+            <a routerLink="">Главная</a>
+        </li>
+        <li routerLinkActive="active">
+            <a routerLink="/create">Добавить новую задачу</a>
+        </li>
+        <li routerLinkActive="active">
+            <a routerLink="/edit">Редактировать задачу</a>
+        </li>
+    </ul>
+    <router-outlet></router-outlet>
+</div>

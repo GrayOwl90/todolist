@@ -1,0 +1,38 @@
+<h1>Создать новую задачу</h1>
+<form action="" ngSubmit="">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <td>Id</td>
+            <td>Название</td>
+            <td>Описание</td>
+            <td>Важность</td>
+            <td>Готовность</td>
+            <td>Дата создания</td>
+            <td>Дедлайн</td>
+            <td>Дата завершения</td>
+            <td></td>
+            <td></td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input type="text" [(ngModel)]="editedTask.id" readonly disabled class="form-control" /></td>
+            <td><input type="text" [(ngModel)]="editedTask.name" class="form-control" /></td>
+            <td><input type="text" [(ngModel)]="editedTask.description" class="form-control"/></td>
+            <td><input type="text" [(ngModel)]="editedTask.importance" class="form-control" /></td>
+            <td><input type="checkbox" name="completed" [(checked)]="editedTask.completed" class="form-control" /></td>
+            <td><input type="number" [(ngModel)]="editedTask.createdDate" readonly disabled class="form-control" /></td>
+            <td><input type="number" [(ngModel)]="editedTask.deadlineDate" class="form-control" /></td>
+            <td><input type="number" [(ngModel)]="editedTask.completedDate" class="form-control" /></td>
+        </tr>
+        </tbody>
+    </table>
+    <div>
+        <input type="button" value="Добавить" (click)="addTask()" class="btn btn-success" />
+    </div>
+</form>
+
+<h2>{{statusMessage}}</h2>
+
+

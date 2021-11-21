@@ -1,0 +1,44 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "name": "Task 1",
+      "description": "Task 1 is task 1",
+      "importance": "veryImportant",
+      "completed": true,
+      "createdDate": "12.12.12",
+      "deadlineDate": "21.12.12",
+      "completedDate": "22.12.12"
+    },
+    {
+      "id": 2,
+      "name": "Task 2",
+      "description": "Task 2 is task 2",
+      "importance": "important",
+      "completed": true,
+      "createdDate": "13.12.12",
+      "deadlineDate": "21.12.12",
+      "completedDate": "22.12.12"
+    },
+    {
+      "id": 3,
+      "name": "Task 3",
+      "description": "Task 3 is task 3",
+      "importance": "usual",
+      "completed": false,
+      "createdDate": "13.12.12",
+      "deadlineDate": "21.12.12",
+      "completedDate": ""
+    },
+    {
+      "id": 4,
+      "name": "Task 4",
+      "description": "Task 4 is task 4",
+      "importance": "usual",
+      "completed": false,
+      "createdDate": "13.12.12",
+      "deadlineDate": "21.12.12",
+      "completedDate": ""
+    }
+  ]
+}

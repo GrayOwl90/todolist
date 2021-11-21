@@ -1,0 +1,50 @@
+<h1>Список задач</h1>
+
+<table class="table table-striped">
+        <thead>
+        <tr>
+            <td></td>
+            <td>Id</td>
+            <td>Название</td>
+            <td>Описание</td>
+            <td>Важность</td>
+            <td>Дата создания</td>
+            <td>Дедлайн</td>
+            <td>Дата завершения</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let task of tasks">
+            <td>
+                <input type="checkbox" name="completed" class="form-control" />
+            </td>
+            <td>{{task.id}}</td>
+            <td>
+                <del *ngIf="task.completed"><span>{{task.name}}</span></del>
+                <span *ngIf="!task.completed">{{task.name}}</span>
+            </td>
+            <td>{{task.description}}</td>
+            <td>{{task.importance}}</td>
+            <td>{{task.createdDate}}</td>
+            <td>{{task.deadlineDate}}</td>
+            <td>{{task.completedDate}}</td>
+            <td>
+                <input type="button" value="Изменить" class="btn btn-default" />
+            </td>
+            <td>
+                <input type="button" value="Удалить" (click)="deleteTask(task)" class="btn btn-danger" />
+            </td>
+            <td>
+                <input type="button" value="Завершить" (click)="completeTask(task)" class="btn btn-danger" />
+            </td>
+        </tr>
+    </tbody>
+</table>
+<h2>{{statusMessage}}</h2>
+
+
+
+
+
